@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Login/index.css' %}" />
+</head>
+<body>
+    <h1>Welcome</h1>
+    <div>Login and Signup Using Django Framework</div><br>
+    <button><a href='{% url 'signup' %} '>Sign Up</a></button>
+    <button><a href='{% url 'signin' %} '>Sign in</a></button>
+    <button><a href='{% url 'signout' %} '>Sign out</a></button>
+</body>
+</html>
